@@ -80,7 +80,7 @@ section:not([id="1"]) :where(p, ul, ol) {
   font-size: 50px;
 }
 
-section:not([id="1"]) > :where(p, ul, ol, columns) {
+section:not([id="1"]) > :where(p, ul, ol, div) {
   padding: 15px 120px;
 }
 
@@ -125,8 +125,8 @@ marp-pre {
   font-size: 40px;
 }
 
-columns {
+div.columns {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
