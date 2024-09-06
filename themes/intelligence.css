@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* Variables */
 :root {
@@ -71,21 +71,28 @@ section:not([id="1"]) > h2:first-child {
   padding: 40px 120px;
 }
 
-section:not([id="1"]) > h3 {
+section:not([id="1"]) h3 {
   font-size: 60px;
   padding: 10px 120px;
 }
 
-section:not([id="1"]) > :where(p, ul, ol) {
-  padding: 15px 120px;
+section:not([id="1"]) :where(p, ul, ol) {
   font-size: 50px;
+}
+
+section:not([id="1"]) > :where(p, ul, ol, columns) {
+  padding: 15px 120px;
+}
+
+section:not([id="1"]) > marp-pre {
+  margin: 0 120px;
 }
 
 section:not([id="1"]) > :where(ul, ol) {
   padding-left: 180px;
 }
 
-section:not([id="1"]) > :where(ul, ol) > li > :where(ul, ol) {
+section:not([id="1"]) > :where(ul, ol) :where(ul, ol) {
   font-size: 40px;
 }
 
@@ -109,10 +116,14 @@ em {
 
 code,
 marp-pre {
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: "Ubuntu Mono", "Pretendard", monospace;
 }
 
 marp-pre {
   font-size: 40px;
-  margin: 0 120px;
+}
+
+columns {
+  column-count: 2;
+  column-gap: 40px;
 }
