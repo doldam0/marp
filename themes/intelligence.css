@@ -56,6 +56,11 @@ section[id="1"] > p {
   padding: 10px 250px;
 }
 
+section[id="1"].long-title > h1:first-child {
+  font-size: 90px;
+  padding-top: 380px;
+}
+
 section:not([id="1"]) > h2:first-child {
   background: var(--grad);
   color: white;
