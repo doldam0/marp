@@ -111,10 +111,6 @@ footer {
   font-size: 26px;
 }
 
-span {
-  color: var(--color-red);
-}
-
 em {
   font-style: normal;
   color: var(--color-red);
@@ -130,6 +126,7 @@ marp-pre {
 }
 
 columns {
-  column-count: 2;
-  column-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
