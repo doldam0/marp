@@ -5,7 +5,7 @@ paginate: true
 footer: System Programming Lab.
 ---
 
-# Linux Command GCC / GDB
+# Docker
 
 Prof. Jinwoo Jang
 System Programming Lab.

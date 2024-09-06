@@ -50,6 +50,7 @@ section[id="1"] > h1:first-child {
   padding: 10px 250px;
   height: 700px;
   display: flex;
+  justify-content: center;
   align-items: end;
 }
 
@@ -68,6 +69,11 @@ section:not([id="1"]) > h2:first-child {
   color: white;
   font-size: 80px;
   padding: 40px 120px;
+}
+
+section:not([id="1"]) > h3 {
+  font-size: 60px;
+  padding: 10px 120px;
 }
 
 section:not([id="1"]) > :where(p, ul) {
