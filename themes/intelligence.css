@@ -47,7 +47,10 @@ section[id="1"] > h1:first-child {
   color: white;
   font-size: 140px;
   text-align: center;
-  padding: 500px 250px 10px 250px;
+  padding: 10px 250px;
+  height: 700px;
+  display: flex;
+  align-items: end;
 }
 
 section[id="1"] > p {
@@ -58,7 +61,6 @@ section[id="1"] > p {
 
 section[id="1"].long-title > h1:first-child {
   font-size: 90px;
-  padding-top: 380px;
 }
 
 section:not([id="1"]) > h2:first-child {
