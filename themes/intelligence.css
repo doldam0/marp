@@ -76,21 +76,17 @@ section:not([id="1"]) > h3 {
   padding: 10px 120px;
 }
 
-section:not([id="1"]) > :where(p, ul) {
+section:not([id="1"]) > :where(p, ul, ol) {
   padding: 15px 120px;
   font-size: 50px;
 }
 
-section:not([id="1"]) > ul {
+section:not([id="1"]) > :where(ul, ol) {
   padding-left: 180px;
 }
 
-section:not([id="1"]) > ul > li > ul {
+section:not([id="1"]) > :where(ul, ol) > li > :where(ul, ol) {
   font-size: 40px;
-}
-
-section:not([id="1"]) > ul > li > ul > li > ul {
-  font-size: 30px;
 }
 
 p:has(> img) {
