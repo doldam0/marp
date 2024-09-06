@@ -64,8 +64,8 @@ section[id="1"].long-title > h1:first-child {
 section:not([id="1"]) > h2:first-child {
   background: var(--grad);
   color: white;
-  font-size: 90px;
-  padding: 60px 120px;
+  font-size: 80px;
+  padding: 40px 120px;
 }
 
 section:not([id="1"]) > :where(p, ul) {
