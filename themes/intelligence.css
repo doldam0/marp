@@ -101,6 +101,12 @@ p:has(> img) {
   justify-content: space-around;
 }
 
+img[alt~="center"] {
+  height: 800px;
+  margin-bottom: 50px;
+  object-fit: contain;
+}
+
 footer {
   font-size: 26px;
 }
