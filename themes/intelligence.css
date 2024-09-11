@@ -130,3 +130,24 @@ div.columns {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
+
+table {
+  margin: 50px auto;
+  font-size: 40px;
+}
+
+table > thead > tr {
+  background-color: var(--color-blue);
+  color: white;
+  border: white;
+}
+
+table > tbody > tr:nth-child(2n) {
+  background-color: white;
+  color: black;
+  border: white;
+}
+
+table > tbody > tr:nth-child(2n) {
+  background-color: color-mix(in srgb, var(--color-blue) 15%, transparent);
+}
