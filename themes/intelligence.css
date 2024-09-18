@@ -1,4 +1,7 @@
-/* @theme intelligence */
+/**
+ * @theme intelligence
+ * @auto-scaling math
+ */
 
 @import "default";
 
@@ -84,7 +87,7 @@ section:not([id="1"]) > :where(p, ul, ol, div) {
   padding: 15px 120px;
 }
 
-section:not([id="1"]) > marp-pre {
+section:not([id="1"]) > pre {
   margin: 0 120px;
 }
 
@@ -117,11 +120,11 @@ em {
 }
 
 code,
-marp-pre {
+pre {
   font-family: "Ubuntu Mono", "Pretendard", monospace;
 }
 
-marp-pre {
+pre {
   font-size: 40px;
 }
 
