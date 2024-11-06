@@ -132,7 +132,7 @@ pre {
   font-size: 40px;
 }
 
-div.columns, div.columns.2 {
+div.columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
